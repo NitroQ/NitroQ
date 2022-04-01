@@ -1,3 +1,3 @@
 <div align="center">
-  <img src="https://media.discordapp.net/attachments/884267448910635148/959353271955386419/Group_246-3.png?width=959&height=165">
+  <img src="https://cdn.discordapp.com/attachments/884267448910635148/959353785904410634/Group_246.svg">
 </div>
