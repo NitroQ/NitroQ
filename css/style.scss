@@ -11,6 +11,16 @@ $foreground : #000000;
     box-sizing: border-box;
 }
 
+.bg-light{
+  transition: 0.3s ease-in;
+}
+.w-75{
+  transition: 0.3s ease-in;
+}
+.navbar{
+    transition: 0.3s ease-out;
+}
+
 ul{
     .nav-link{
         font-weight: 600;
@@ -26,4 +36,47 @@ div#section-1{
     h1{
         font-weight: 500;
     }
+
+    i{
+        color: white;
+    }
 }
+
+#dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+  }
+  
+.dropdown-content a:hover { 
+    color:white;
+    font-weight: 500;
+     background-color: #949494}
+
+ #dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+  footer{
+    color: white;
+    background-color: #213050;
+  }
+  
