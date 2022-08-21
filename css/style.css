@@ -1,4 +1,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  overflow-x: hidden;
+}
+
+#intro {
+  width: 100vw;
+  height: 90vh;
+  display: grid;
+  padding: 60px 0;
+  grid: 1fr -webkit-min-content -webkit-min-content 1fr/1fr;
+  grid: 1fr min-content min-content 1fr/1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+section {
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  --v-offset: 70px;
+  --curve-height: 100px;
+}
+section:before, section:after {
+  content: "";
+  display: block;
+  background: white;
+  width: calc(100vw + 2 * var(--v-offset));
+  height: var(--curve-height);
+  position: absolute;
+  border-radius: 50%;
+  left: calc(-1 * var(--v-offset));
+  right: calc(-1 * var(--v-offset));
+}
+section:before {
+  top: calc(-0.6 * var(--curve-height));
+}
+section:after {
+  bottom: calc(-0.5 * var(--curve-height));
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 300px;
+  grid-auto-flow: column;
+  grid-gap: 10px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+.wrapper img {
+  scroll-snap-align: center;
+}
+
 * {
   font-family: "Jost", sans-serif;
   margin: 0;
@@ -23,7 +77,7 @@ ul .nav-link {
 }
 
 div#section-1 {
-  background-image: url("./pictures/bg1.png");
+  background-image: url("/pictures/bg1.png");
   background-size: cover;
   height: 100vh;
 }
@@ -31,7 +85,7 @@ div#section-1 h1 {
   font-weight: 500;
 }
 div#section-1 i {
-  color: white;
+  color: #FFFFFF;
 }
 
 #dropdown {
@@ -42,8 +96,8 @@ div#section-1 i {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
+  background-color: #FFFFFF;
+  min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   padding: 12px 16px;
