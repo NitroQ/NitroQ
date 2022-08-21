@@ -76,15 +76,15 @@ ul .nav-link {
   font-weight: 600;
 }
 
-div#section-1 {
+#section-1 {
   background-image: url("/pictures/bg1.png");
   background-size: cover;
   height: 100vh;
 }
-div#section-1 h1 {
+#section-1 h1 {
   font-weight: 500;
 }
-div#section-1 i {
+#section-1 i {
   color: #FFFFFF;
 }
 
